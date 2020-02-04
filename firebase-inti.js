@@ -1,13 +1,8 @@
 // Initialize Firebase Project
 var config = {
-    apiKey: "AIzaSyAgy1vjyOVnSL6HMdQrZ4NWTeg0ppk_1-k",
-    authDomain: "litfans-18165.firebaseapp.com",
-    databaseURL: "https://litfans-18165.firebaseio.com",
-    projectId: "litfans-18165",
-    storageBucket: "litfans-18165.appspot.com",
-    messagingSenderId: "38884730872",
-    appId: "1:38884730872:web:748fbbac7d66c042c5980d",
-    measurementId: "G-2FV515K21L"
+    
+    // your firebase project config variable value
+    
 };
 firebase.initializeApp(config);
 
