@@ -6,8 +6,10 @@ public function sendNotification()
 // Multiple Values in Single Variable
         // foreach ($results as $result) {
         //     $registrationIds[] = $result->webtoken;
-        //   }            
-        // $registrationIds[]=$influencer_webtoken;
+        //   }  
+    
+        // other webtoken add in array variable
+        // $registrationIds[]=$webtoken;
         
         $msg = [
             'title' => 'Demo Notification',
