@@ -40,7 +40,7 @@ messaging.onMessage(function(payload) {
 // Save webtoken in local database
 function save_token(token) {
     $.ajax({
-        url: SITE_URL + 'admin/Login/store_token',
+        url: 'url',
         method: 'post',
         data: { token }
     }).done(function(result) {
