@@ -10,13 +10,13 @@ public function sendNotification()
         // $registrationIds[]=$influencer_webtoken;
         
         $msg = [
-            'title' => 'Litfans Notification',
-            'body' => "$user $msg $influencer",
-            'icon' => 'https://litfans.com/assets/images/favicon.png',           
+            'title' => 'Demo Notification',
+            'body' => "Demo Web-Push Notification",
+            'icon' => 'images/favicon.png',           
             'sound' => 'default',
           ];
         $fields = array (
-            'registration_ids' => $registrationIds,
+            'registration_ids' => 'browser token',
             'notification' => $msg
         );        
         
@@ -33,7 +33,7 @@ public function sendNotification()
         CURLOPT_CUSTOMREQUEST => "POST",
         CURLOPT_POSTFIELDS =>json_encode($fields),
         CURLOPT_HTTPHEADER => array(
-            "Authorization: key= ".$this->firebase_key,
+            "Authorization: key= firebase_key",
             "Content-Type: application/json"
         ),
         ));
